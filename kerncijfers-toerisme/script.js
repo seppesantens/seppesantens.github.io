@@ -64,7 +64,7 @@ function onEachFeature(feature, layer) {
     });
 }
 
-const response = fetch('https://raw.githubusercontent.com/seppesantens/kerncijfers-toerisme/main/kerncijfers.geojson')
+const response = fetch('kerncijfers.geojson')
 	.then(response => response.json())
 	.then(response => {
 		kerncijfers = L.geoJson(response,{
