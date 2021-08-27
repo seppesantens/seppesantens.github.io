@@ -1,3 +1,7 @@
 [submodule "SheepMapGhent"]
 	path = SheepMapGhent
 	url = https://github.com/seppesantens/SheepMapGhent
+
+[submodule "kerncijfers-toerisme"]
+	path = kerncijfers-toerisme
+	url = https://github.com/seppesantens/kerncijfers-toerisme
