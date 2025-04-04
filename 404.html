@@ -21,12 +21,15 @@
 <body>
     <h1>404 Not Found</h1>
     <p>Sorry, the page you are looking for does not exist.</p>
+    <!-- catching URL's for Bestemming NerdLand --> 
     <script>
         window.onload = () => {
             const currentURL = window.location.href;
-            console.log("current URL is " + currentURL);
             const correctURL = "https://seppesantens.github.io/bestemmingNerdLand/";
+            const correctURLWithoutSlash = "https://seppesantens.github.io/bestemmingNerdLand";
             if (currentURL.toLowerCase() === correctURL.toLowerCase() && currentURL !== correctURL) {
+                location.replace(correctURL);
+            } else if (currentURL.toLowerCase() === correctURLWithoutSlash.toLowerCase() && currentURL !== correctURLWithoutSlash) {
                 location.replace(correctURL);
             }
         };
