@@ -24,6 +24,7 @@
     <script>
         window.onload = () => {
             const currentURL = window.location.href;
+            console.log("current URL is " + currentURL);
             const correctURL = "https://seppesantens.github.io/bestemmingNerdLand/";
             if (currentURL.toLowerCase() === correctURL.toLowerCase() && currentURL !== correctURL) {
                 location.replace(correctURL);
